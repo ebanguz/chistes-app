@@ -1,0 +1,41 @@
+<router-outlet> </router-outlet>
+
+<div class="container">
+  <div class="row">
+    <div class="col d-flex justify-content-between align-items-center py-2">
+      <h1>Chistes App</h1>
+      <button class="btn">
+        <i class="fa-solid fa-circle-info fa-lg"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card shadow rounded" (click)="goToJokes()">
+        <img
+          src="../../../../../assets/images/laugh.png"
+          class="card-img"
+          alt="..."
+        />
+        <div class="card-body">
+          <h4 class="card-title">Chistes</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow rounded" (click)="goToPuzzles()">
+        <img
+          src="../../../../../assets/images/thinking.png"
+          class="card-img"
+          alt="..."
+        />
+        <div class="card-body">
+          <h4 class="card-title">Adivinanzas</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
